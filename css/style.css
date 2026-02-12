@@ -1,6 +1,5 @@
 :root {
     --primary: #5a2a27;
-    /* Bordeaux from user image */
     --accent: #5a2a27;
     --accent-dark: #401e1c;
     --accent-light: #7a3a36;
@@ -9,16 +8,13 @@
     --bordeaux-light: #7a3a36;
     --white: #ffffff;
     --off-white: #fdfaf9;
-    /* Slightly warm off-white */
     --text-dark: #2c1412;
-    /* Very dark bordeaux/brown for text */
     --text-muted: #6e5a59;
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     --font-main: 'Poppins', sans-serif;
     --font-serif: 'Georgia', serif;
 }
 
-/* Dark Theme Variables */
 [data-theme="dark"] {
     --white: #1a0d0c;
     --off-white: #251211;
@@ -27,36 +23,6 @@
     --accent: #7a3a36;
     --accent-dark: #fdfaf9;
     --bordeaux: #7a3a36;
-}
-
-/* Theme Toggle Button */
-.theme-toggle {
-    background: var(--off-white);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    color: var(--text-dark);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: var(--transition);
-    margin-left: 20px;
-}
-
-[data-theme="dark"] .theme-toggle {
-    border-color: rgba(255, 255, 255, 0.1);
-}
-
-.theme-toggle:hover {
-    transform: scale(1.1);
-    background: var(--accent);
-    color: white;
-}
-
-.theme-toggle i {
-    font-size: 1.2rem;
 }
 
 * {
@@ -68,34 +34,16 @@
 body {
     font-family: var(--font-main);
     font-weight: 300;
-    /* Poppins Light */
     line-height: 1.8;
     color: var(--text-dark);
     background-color: var(--white);
     overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: var(--font-serif);
     font-weight: 400;
     color: var(--primary);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition);
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
 }
 
 .container {
@@ -104,7 +52,6 @@ img {
     margin: 0 auto;
 }
 
-/* Navbar */
 nav {
     height: 100px;
     display: flex;
@@ -112,101 +59,16 @@ nav {
     justify-content: space-between;
     padding: 0 5%;
     background: var(--white);
-    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="dark"] nav {
-    background: rgba(26, 26, 26, 0.95);
-    border-bottom-color: rgba(255, 255, 255, 0.05);
-}
-
-/* Standard Logo Styling - New PNG Assets */
-.logo img,
-.footer-logo img,
-.hero-logo,
-.about-logo-monogram img {
-    width: auto;
-    display: block;
-    object-fit: contain;
-    transition: var(--transition);
 }
 
 .main-logo-img {
     height: 85px;
 }
 
-.hero-logo {
-    max-height: 320px;
-    /* Increased for "logazo" */
-    margin: 0 auto 30px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5)) brightness(1.2);
-}
-
-.footer-logo img {
-    max-height: 180px;
-}
-
-.about-logo-monogram img {
-    max-height: 240px;
-    opacity: 0.15;
-}
-
-/* Ensure team text is readable across themes */
-.team-card {
-    background: var(--white) !important;
-    color: var(--text-dark) !important;
-}
-
-.team-card h2 {
-    color: var(--bordeaux-dark) !important;
-}
-
-.team-card p {
-    color: var(--text-dark) !important;
-}
-
-[data-theme="dark"] .team-card {
-    background: #2a2a2a !important;
-    border-color: #444 !important;
-}
-
-[data-theme="dark"] .team-card h2 {
-    color: white !important;
-}
-
-.nav-links {
-    display: flex;
-    gap: 2.5rem;
-    align-items: center;
-}
-
-.nav-links a {
-    font-weight: 500;
-    font-size: 0.95rem;
-    color: var(--text-dark);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.nav-links a:hover {
-    color: var(--bordeaux);
-}
-
-.btn-whatsapp-nav {
-    background-color: var(--accent);
-    color: white !important;
-    padding: 10px 24px;
-    border-radius: 5px;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-}
-
-/* Hero Section */
 .hero {
     height: 90vh;
     display: flex;
@@ -219,68 +81,37 @@ nav {
     text-align: center;
 }
 
-.hero-content {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.hero-home-content {
-    padding: 100px 20px 0;
+.hero-logo {
+    max-height: 280px;
+    margin: 0 auto 30px;
+    display: block;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)) brightness(1.1);
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
     font-weight: 300;
 }
 
-.hero-btns {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.btn {
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    display: inline-block;
-}
-
-.btn-primary {
-    background-color: var(--accent);
-    color: white;
-}
-
-.btn-secondary {
-    background-color: transparent;
-    border: 2px solid currentColor;
-    color: inherit;
-}
-
-/* Practice Areas */
 .areas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
 .area-card {
     padding: 40px;
     background: var(--white);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0,0,0,0.05);
     border-radius: 10px;
     transition: var(--transition);
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
 }
 
 .area-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
     border-color: var(--accent);
 }
 
@@ -290,12 +121,38 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-/* Footer Colors Correction */
-[data-theme="dark"] footer {
-    background: var(--off-white);
+.btn {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-block;
+    text-decoration: none;
 }
 
-/* Floating WhatsApp */
+.btn-primary {
+    background-color: var(--accent);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+footer {
+    padding: 60px 0;
+    background: var(--off-white);
+    text-align: center;
+}
+
+.footer-logo img {
+    max-height: 150px;
+    margin-bottom: 20px;
+}
+
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -309,18 +166,6 @@ nav {
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     z-index: 1001;
-}
-
-@media (max-width: 768px) {
-    .hero-content p {
-        font-size: 1.1rem;
-    }
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
-    .nav-links {
-        display: none;
-    }
+    text-decoration: none;
 }
