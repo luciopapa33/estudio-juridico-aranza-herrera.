@@ -4,38 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Aranza Herrera — Abogada | Asesoramiento Legal Profesional</title>
     <meta name="description"
-        content="Estudio Jurídico Dra. Aranza Herrera - Rosario. Sucesiones, Divorcios, Notarial, Previsional y Sociedades y Empresas. Asesoramiento legal profesional para emprendedores y familias.">
-    <title>Dra. Aranza Herrera | Estudio Jurídico</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/hipologuito.png">
+        content="Estudio Jurídico de la Dra. Aranza Herrera. Especialista en Derecho Previsional, Sucesiones, Divorcios, Sociedades y Empresas. Asesoramiento legal profesional para emprendedores.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Nav -->
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5493417418835" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <div class="whatsapp-msg">¿Necesitás asesoramiento? Escribime.</div>
+    </a>
+
+    <!-- Navbar -->
     <nav>
         <div class="logo">
             <a href="index.html" class="brand-logo">
-                <img src="assets/hipologuito.png" alt="Logotipo Dra. Aranza Herrera" class="main-logo-img">
+                <img src="assets/hipologuito.png" alt="Dra. Aranza Herrera Logo" class="main-logo-img">
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#areas">Áreas</a></li>
-            <li><a href="equipo.html">Equipo</a></li>
-            <li><a href="redes.html">Redes</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#areas">Áreas de Práctica</a></li>
+            <li><a href="equipo.html">Equipo Legal</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="https://wa.me/5493417418835" class="btn-whatsapp-nav">WhatsApp</a></li>
             <li><button id="theme-toggle" class="theme-toggle" title="Cambiar modo"><i class="fas fa-moon"></i></button>
@@ -49,188 +53,214 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" id="inicio">
-        <div class="hero-content">
-            <div class="hero-labels">
-                <span class="label">Abogada & Escribana</span>
-            </div>
-            <h1>Compromiso Jurídico con <br><span class="highlight">Visión Humana</span></h1>
-            <p>Soluciones legales personalizadas en Rosario y Provincia de Santa Fe. Tu tranquilidad es nuestra prioridad.
-            </p>
+    <section class="hero">
+        <div class="hero-content hero-home-content">
+            <p>Asesoramiento legal con trato humano y soluciones concretas.</p>
             <div class="hero-btns">
-                <a href="#areas" class="btn btn-primary">Áreas de práctica</a>
-                <a href="https://calendar.app.google/8zVU6ZTFnbLtJ9tW7" class="btn btn-secondary">Agenda una consulta</a>
+                <a href="#areas" class="btn btn-primary">Ver áreas de práctica</a>
+                <a href="https://wa.me/5493417418835" class="btn btn-secondary">WhatsApp</a>
+                <a href="https://calendar.app.google/8zVU6ZTFnbLtJ9tW7" class="btn btn-secondary">Solicitar Turno</a>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- About Section -->
-    <section class="section container" id="sobre-mi">
+    <section id="sobre-mi" class="container">
         <div class="about-grid">
-            <div class="about-img animate-on-scroll">
-                <img src="assets/oficina.jpeg" alt="Oficina Estudio Jurídico" style="border-radius: 12px; box-shadow: var(--shadow-lg);">
+            <div class="about-text">
+                <h3>Sobre el Estudio</h3>
+                <p>En el estudio de la Dra. Aranza Herrera, entendemos que cada caso es único y requiere una atención
+                    personalizada. Nuestro compromiso es brindar seguridad jurídica y tranquilidad a nuestros clientes a
+                    través de un trato cercano y profesional.</p>
+                <p>Nos especializamos en brindar soluciones efectivas, priorizando siempre la comunicación clara y la
+                    celeridad en la resolución de conflictos.</p>
+                <a href="equipo.html" class="btn btn-primary" style="margin-top: 20px;">Conocer más</a>
             </div>
-            <div class="about-text animate-on-scroll">
-                <span class="section-subtitle">Dra. Aranza Herrera</span>
-                <h2>Ética, Profesionalismo y Cercanía</h2>
-                <p>Ubicada en el corazón de Rosario, brindo asesoramiento legal integral con el objetivo de acompañar a
-                    personas y empresas en la resolución de sus conflictos jurídicos.</p>
-                <p>Mi enfoque se basa en la transparencia y la comunicación constante con el cliente, asegurando que
-                    cada caso reciba la atención detallada que merece.</p>
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-num">Personal</span>
-                        <span>Asesoramiento</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-num">Integral</span>
-                        <span>Servicio</span>
-                    </div>
+            <div class="about-img" style="display: flex; align-items: center; justify-content: center;">
+                <div class="about-logo-monogram">
+                    <img src="assets/hipologuito.png" alt="AH Logo">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Practice Areas -->
-    <section class="section section-alt" id="areas">
+    <!-- Practice Areas Summary -->
+    <section id="areas" style="background-color: var(--off-white);">
         <div class="container">
             <div class="section-title">
-                <span class="section-subtitle">Lo que hacemos</span>
                 <h2>Áreas de Práctica</h2>
+                <div class="underline"></div>
             </div>
             <div class="areas-grid">
-                <!-- Sucesiones -->
-                <div class="area-card animate-on-scroll">
-                    <div class="area-icon"><i class="fas fa-file-signature"></i></div>
+                <!-- Area: Previsional -->
+                <div class="area-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Derecho Previsional</h3>
+                    <p>Jubilaciones, pensiones y planificación previsional integral.</p>
+                    <a href="areas/previsional.html" class="btn-text">Leer más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Area: Sucesiones -->
+                <div class="area-card">
+                    <i class="fas fa-file-contract"></i>
                     <h3>Sucesiones</h3>
-                    <p>Tramitación ágil y humana de procesos sucesorios, declaratorias de herederos e inscripciones.</p>
-                    <a href="areas/sucesiones.html" class="read-more">Ver más <i class="fas fa-arrow-right"></i></a>
+                    <p>Asesoramiento legal integral en procesos sucesorios.</p>
+                    <a href="areas/sucesiones.html" class="btn-text">Leer más <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                <!-- Divorcios -->
-                <div class="area-card animate-on-scroll" style="transition-delay: 0.1s;">
-                    <div class="area-icon"><i class="fas fa-users-slash"></i></div>
+                <!-- Area: Divorcios -->
+                <div class="area-card">
+                    <i class="fas fa-users-slash"></i>
                     <h3>Divorcios</h3>
-                    <p>Asesoramiento integral en divorcios, convenios reguladores y régimenes familiares.</p>
-                    <a href="areas/divorcios.html" class="read-more">Ver más <i class="fas fa-arrow-right"></i></a>
+                    <p>Asesoramiento legal integral en procesos de divorcio.</p>
+                    <a href="areas/divorcios.html" class="btn-text">Leer más <i class="fas fa-arrow-right"></i></a>
                 </div>
-
-                <!-- Notarial -->
-                <div class="area-card animate-on-scroll" style="transition-delay: 0.2s;">
-                    <div class="area-icon"><i class="fas fa-pen-nib"></i></div>
-                    <h3>Servicios Notariales</h3>
-                    <p>Redacción de escrituras, contratos y asesoramiento en seguridad jurídica patrimonial.</p>
-                    <a href="areas/notarial.html" class="read-more">Ver más <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Previsional -->
-                <div class="area-card animate-on-scroll" style="transition-delay: 0.3s;">
-                    <div class="area-icon"><i class="fas fa-user-shield"></i></div>
-                    <h3>Previsional</h3>
-                    <p>Gestión de jubilaciones, pensiones y trámites ante ANSES y Caja de Jubilaciones de Santa Fe.</p>
-                    <a href="areas/previsional.html" class="read-more">Ver más <i class="fas fa-arrow-right"></i></a>
-                </div>
-
-                <!-- Sociedades -->
-                <div class="area-card animate-on-scroll" style="transition-delay: 0.4s;">
-                    <div class="area-icon"><i class="fas fa-building"></i></div>
+                <!-- Area: Sociedades -->
+                <div class="area-card">
+                    <i class="fas fa-briefcase"></i>
                     <h3>Sociedades y Empresas</h3>
-                    <p>Constitución de sociedades, asesoramiento jurídico para emprendedores y startups.</p>
-                    <a href="areas/sociedades.html" class="read-more">Ver más <i class="fas fa-arrow-right"></i></a>
+                    <p>Constitución y asesoramiento integral para empresas y emprendimientos.</p>
+                    <a href="areas/sociedades.html" class="btn-text">Leer más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Area: Servicios Notariales -->
+                <div class="area-card">
+                    <i class="fas fa-pen-nib"></i>
+                    <h3>Servicios Notariales</h3>
+                    <p>seguridad jurídica, redacción precisa y respaldo registral.</p>
+                    <a href="areas/notarial.html" class="btn-text">Leer más <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="section container">
-        <div class="section-title">
-            <span class="section-subtitle">Clientes satisfechos</span>
-            <h2>Testimonios</h2>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card animate-on-scroll">
-                <div class="stars">★★★★★</div>
-                <p>"Excelente atención y profesionalismo. Resolvió mi caso de sucesión mucho más rápido de lo que
-                    esperaba."</p>
-                <div class="client-name">- María G.</div>
+    <!-- Testimonials Section -->
+    <section id="testimonios" style="background-color: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonios</h2>
+                <div class="underline"></div>
+                <p style="text-align: center; margin-top: 10px; color: var(--text-muted);">
+                    Nuestros clientes avalan nuestro compromiso con <strong>4.9/5 estrellas</strong> en Google.
+                </p>
             </div>
-            <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.1s;">
-                <div class="stars">★★★★★</div>
-                <p>"Muy clara en sus explicaciones. Siempre disponible para responder dudas durante mi proceso de
-                    divorcio."</p>
-                <div class="client-name">- Roberto F.</div>
+            <div class="testigos-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Súper agradecimiento con el estudio jurídico. Son muy responsables, comunican todo el tiempo y
+                        son muy amables. Tienen un personal increíble. ¡Totalmente recomendable!"</p>
+                    <div class="author">
+                        <strong>— Liliana R.</strong>
+                        <span>Reseña de Google</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excelente atención y calidez humana. Resolvieron mi jubilación mucho más rápido de lo que
+                        esperaba. Muy conformes con el trato recibido."</p>
+                    <div class="author">
+                        <strong>— Juan Carlos G.</strong>
+                        <span>Reseña de Google</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"La Dra. Aranza me asesoró en mi divorcio con mucha paciencia y profesionalismo. Me sentí
+                        contenida y muy bien informada en todo momento."</p>
+                    <div class="author">
+                        <strong>— María L.</strong>
+                        <span>Reseña de Google</span>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.2s;">
-                <div class="stars">★★★★★</div>
-                <p>"Impecable trato y eficiencia en trámites jubilatorios. Muy recomendable en Rosario."</p>
-                <div class="client-name">- Elena P.</div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://www.google.com/maps/search/Estudio+Jurídico+Dra.+Aranza+Herrera+Capitán+Bermúdez/@-32.825,-60.716,15z"
+                    target="_blank" class="btn-text">
+                    Ver todas las reseñas en Google <i class="fas fa-external-link-alt"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="section section-alt">
-        <div class="container faq-container">
+    <!-- FAQ Section -->
+    <section id="faq" style="background-color: var(--off-white);">
+        <div class="container">
             <div class="section-title">
-                <span class="section-subtitle">Dudas frecuentes</span>
-                <h2>Preguntas Comunes</h2>
+                <h2>Preguntas Frecuentes</h2>
+                <div class="underline"></div>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">¿Tienen atención presencial en Rosario?</div>
-                <div class="faq-answer">Sí, nuestra oficina está ubicada en la zona céntrica de Rosario. Atendemos con
-                    turno previo para garantizar una atención personalizada.</div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <details style="padding: 20px; border-bottom: 1px solid #ddd; cursor: pointer;">
+                    <summary
+                        style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                        ¿Cómo solicito una consulta inicial? <i class="fas fa-chevron-down"
+                            style="font-size: 0.8rem;"></i>
+                    </summary>
+                    <p style="margin-top: 15px; color: var(--text-muted);">Podés agendar un turno directamente desde
+                        nuestro calendario online o enviarnos un mensaje por WhatsApp para coordinar.</p>
+                </details>
+                <details style="padding: 20px; border-bottom: 1px solid #ddd; cursor: pointer;">
+                    <summary
+                        style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                        ¿Atienden casos de manera virtual? <i class="fas fa-chevron-down"
+                            style="font-size: 0.8rem;"></i>
+                    </summary>
+                    <p style="margin-top: 15px; color: var(--text-muted);">Sí, realizamos consultas por Zoom o WhatsApp
+                        para clientes que no pueden acercarse al estudio.</p>
+                </details>
+                <details style="padding: 20px; border-bottom: 1px solid #ddd; cursor: pointer;">
+                    <summary
+                        style="font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                        ¿Qué documentación necesito para una jubilación? <i class="fas fa-chevron-down"
+                            style="font-size: 0.8rem;"></i>
+                    </summary>
+                    <p style="margin-top: 15px; color: var(--text-muted);">Generalmente DNI y certificación de
+                        servicios, pero en la primera consulta te daremos una lista detallada según tu caso.</p>
+                </details>
             </div>
-            <div class="faq-item">
-                <div class="faq-question">¿Realizan consultas por videollamada?</div>
-                <div class="faq-answer">Absolutamente. Entendemos los tiempos de hoy y ofrecemos consultas virtuales para
-                    clientes que se encuentren en otras localidades o prefieran la comodidad de su hogar.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">¿Cuáles son las formas de pago?</div>
-                <div class="faq-answer">Aceptamos diversos medios de pago: transferencia bancaria, efectivo y planes de
-                    cuotas según la complejidad del trámite.</div>
-            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact -->
+    <section class="container" style="text-align: center;">
+        <div class="section-title">
+            <h2>Contacto Rápido</h2>
+        </div>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://wa.me/5493417418835" class="btn btn-primary"
+                style="background-color: #25d366; border: none;">
+                <i class="fab fa-whatsapp"></i> Escribirme por WhatsApp
+            </a>
+            <a href="contacto.html" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Enviar consulta por email
+            </a>
+            <a href="https://calendar.app.google/8zVU6ZTFnbLtJ9tW7" class="btn btn-secondary"
+                style="border-color: var(--bordeaux); color: var(--bordeaux);">
+                <i class="fas fa-calendar-alt"></i> Solicitar Turno
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <img src="assets/logazo.png" alt="Logotipo Dra. Aranza Herrera" class="footer-logo-img">
-                <p>Compromiso jurídico con visión humana. Rosario, Santa Fe.</p>
-                <div class="social-links">
-                    <a href="https://www.tiktok.com/@estudiojuridico.ah"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/estudiojuridico.ah"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/estudiojuridico.ah"><i class="fab fa-facebook"></i></a>
-                </div>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="assets/logazo.png" alt="Logo Dra. Aranza Herrera" class="footer-logo-img">
             </div>
-            <div class="footer-contact">
-                <h3>Contacto</h3>
-                <p><i class="fas fa-phone"></i> +54 9 341 741-8835</p>
-                <p><i class="fas fa-envelope"></i> aranzaherreraab@gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Rosario, Santa Fe</p>
-            </div>
-            <div class="footer-links">
-                <h3>Accesos rápidos</h3>
-                <a href="#inicio">Inicio</a>
-                <a href="#areas">Áreas de Práctica</a>
-                <a href="equipo.html">Equipo Legal</a>
-                <a href="redes.html">Redes Sociales</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
             <p>&copy; 2026 Dra. Aranza Herrera — Todos los derechos reservados.</p>
+            <div style="margin-top: 10px;">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="margin-left: 15px;"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/5493417418835" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
 

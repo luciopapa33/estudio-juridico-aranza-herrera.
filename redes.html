@@ -12,11 +12,87 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .social-page-container {
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .social-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 50px;
+        }
+
+        .social-card {
+            background: var(--off-white);
+            padding: 40px;
+            border-radius: 20px;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+
+        .social-card i {
+            font-size: 4rem;
+            transition: var(--transition);
+        }
+
+        .social-card span {
+            font-weight: 600;
+            font-size: 1.2rem;
+            font-family: var(--font-main);
+        }
+
+        .social-card small {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-top: -15px;
+        }
+
+        /* Hover states */
+        .social-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+
+        .facebook:hover {
+            border-color: #1877F2;
+            color: #1877F2;
+        }
+
+        .instagram:hover {
+            border-color: #E4405F;
+            color: #E4405F;
+        }
+
+        .tiktok:hover {
+            border-color: #000000;
+            color: #000000;
+        }
+
+        .social-card:hover i {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Nav -->
     <nav>
         <div class="logo">
             <a href="index.html" class="brand-logo">
@@ -41,67 +117,67 @@
     </nav>
 
     <header class="hero"
-        style="height: 40vh; background: linear-gradient(rgba(90, 42, 39, 0.9), rgba(90, 42, 39, 0.9));">
+        style="height: 40vh; background: linear-gradient(rgba(90, 42, 39, 0.95), rgba(90, 42, 39, 0.95));">
         <div class="hero-content">
-            <h1>Redes Sociales</h1>
-            <p>Conectá con nosotros en nuestras plataformas.</p>
+            <h1>Nuestras Redes</h1>
+            <p>Seguinos para mantenerte informado sobre novedades legales.</p>
         </div>
     </header>
 
-    <section class="container" style="padding: 100px 0;">
+    <main class="container social-page-container">
         <div class="section-title">
-            <span class="section-subtitle">Nuestra presencia digital</span>
-            <h2>Seguinos y conocé más</h2>
+            <h2>Conectá con nosotros</h2>
+            <div class="underline"></div>
         </div>
 
-        <div class="areas-grid">
-            <a href="https://www.tiktok.com/@estudiojuridico.ah" class="social-item tiktok animate-on-scroll">
-                <i class="fab fa-tiktok"></i>
-                <h3>TikTok</h3>
-                <p>Consejos rápidos y actualidad jurídica.</p>
-            </a>
-            <a href="https://www.instagram.com/estudiojuridico.ah" class="social-item instagram animate-on-scroll"
-                style="transition-delay: 0.1s;">
-                <i class="fab fa-instagram"></i>
-                <h3>Instagram</h3>
-                <p>Nuestro día a día y novedades del estudio.</p>
-            </a>
-            <a href="https://www.facebook.com/estudiojuridico.ah" class="social-item facebook animate-on-scroll"
-                style="transition-delay: 0.2s;">
+        <div class="social-links-grid">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/estudio.aranzaherrera" target="_blank" class="social-card facebook"
+                id="link-facebook">
                 <i class="fab fa-facebook"></i>
-                <h3>Facebook</h3>
-                <p>Artículos y noticias legales de interés.</p>
+                <span>Facebook</span>
+                <small>@estudio.aranzaherrera</small>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/dra.aranzaherrera?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank" class="social-card instagram" id="link-instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+                <small>@dra.aranzaherrera</small>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@dra.aranzaherrera" target="_blank" class="social-card tiktok"
+                id="link-tiktok">
+                <i class="fab fa-tiktok"></i>
+                <span>TikTok</span>
+                <small>@dra.aranzaherrera</small>
             </a>
         </div>
 
-        <!-- TikTok Embed Section -->
-        <div class="animate-on-scroll" style="margin-top: 80px; transition-delay: 0.3s;">
-            <div class="section-title">
-                <h3>Contenido Reciente</h3>
-            </div>
-            <div style="display: flex; justify-content: center;">
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@estudiojuridico.ah"
-                    data-unique-id="estudiojuridico.ah" data-embed-from="embed_page"
-                    style="max-width: 605px; min-width: 325px;">
-                    <section>
-                        <a target="_blank" title="@estudiojuridico.ah"
-                            href="https://www.tiktok.com/@estudiojuridico.ah?refer=embed">@estudiojuridico.ah</a>
-                    </section>
-                </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
-            </div>
+        <!-- TikTok Embed para mayor impacto visual -->
+        <div style="margin-top: 60px; width: 100%; max-width: 500px;">
+            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@dra.aranzaherrera"
+                data-unique-id="dra.aranzaherrera" data-embed-type="creator"
+                style="max-width: 780px; min-width: 288px;">
+                <section> <a target="_blank"
+                        href="https://www.tiktok.com/@dra.aranzaherrera?refer=creator_embed">@dra.aranzaherrera</a>
+                </section>
+            </blockquote>
+            <script async src="https://www.tiktok.com/embed.js"></script>
         </div>
-    </section>
 
-    <!-- Footer -->
+        <p style="margin-top: 40px; color: var(--text-muted);">Hacé clic en cualquiera de los logos para ir a nuestro
+            perfil oficial.</p>
+    </main>
+
     <footer>
         <div class="container">
-            <div class="footer-logo" style="text-align: center; margin-bottom: 40px;">
+            <div class="footer-logo">
                 <img src="assets/logazo.png" alt="Logotipo Dra. Aranza Herrera" class="footer-logo-img">
             </div>
-            <div style="text-align: center;">
-                <p>&copy; 2026 Dra. Aranza Herrera — Todos los derechos reservados.</p>
-            </div>
+            <p>&copy; 2026 Dra. Aranza Herrera — Todos los derechos reservados.</p>
         </div>
     </footer>
 
