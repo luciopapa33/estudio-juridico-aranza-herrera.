@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Dra. Aranza Herrera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav>
+        <div class="logo">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/hipologuito.png" alt="Logotipo Dra. Aranza Herrera" class="main-logo-img">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#areas">Áreas de Práctica</a></li>
+            <li><a href="equipo.html">Equipo Legal</a></li>
+            <li><a href="redes.html">Redes Sociales</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="https://wa.me/5493417418835" class="btn-whatsapp-nav">WhatsApp</a></li>
+            <li><button id="theme-toggle" class="theme-toggle" title="Cambiar modo"><i class="fas fa-moon"></i></button>
+            </li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero"
+        style="height: 40vh; background: linear-gradient(rgba(90, 42, 39, 0.9), rgba(90, 42, 39, 0.9));">
+        <div class="hero-content">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte. Iniciemos una conversación.</p>
+        </div>
+    </header>
+
+    <section class="container" style="padding: 100px 0;">
+        <div class="contact-grid">
+            <div class="animate-on-scroll">
+                <span class="section-subtitle">Datos de contacto</span>
+                <h2>¿Cómo podemos ayudarte?</h2>
+                <p style="margin: 20px 0 40px; color: var(--text-muted);">
+                    Podés contactarnos a través del formulario, por teléfono o agendando una consulta directamente en el
+                    calendario.
+                </p>
+
+                <div class="contact-info-card">
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Rosario, Santa Fe, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+54 9 341 741-8835</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>aranzaherreraab@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <a href="https://calendar.app.google/8zVU6ZTFnbLtJ9tW7" class="btn btn-primary"
+                        style="width: 100%; text-align: center;">Agendar consulta por Google Calendar</a>
+                </div>
+            </div>
+
+            <div class="animate-on-scroll" style="transition-delay: 0.2s;">
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form action="https://formspree.io/f/xvgzpzwk" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto / Área de Interés</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Ej: Sucesión, Divorcio">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Escribe tu consulta aquí..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo" style="text-align: center; margin-bottom: 40px;">
+                <img src="assets/logazo.png" alt="Logotipo Dra. Aranza Herrera" class="footer-logo-img">
+            </div>
+            <div style="text-align: center;">
+                <p>&copy; 2026 Dra. Aranza Herrera — Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
