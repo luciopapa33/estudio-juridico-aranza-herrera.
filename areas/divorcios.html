@@ -5,30 +5,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divorcios | Dra. Aranza Herrera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+
     <nav>
         <div class="logo">
-            <a href="../index.html">
-                <img src="../assets/hipologuito.png" alt="Logo" class="main-logo-img">
+            <a href="../index.html" class="brand-logo">
+                <img src="../assets/hipologuito.png" alt="Logotipo Dra. Aranza Herrera" class="main-logo-img">
             </a>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#areas">Áreas de Práctica</a></li>
+            <li><a href="../equipo.html">Equipo Legal</a></li>
+            <li><a href="../redes.html">Redes Sociales</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+            <li><a href="https://wa.me/5493417418835" class="btn-whatsapp-nav">WhatsApp</a></li>
+            <li><button id="theme-toggle" class="theme-toggle" title="Cambiar modo"><i class="fas fa-moon"></i></button>
+            </li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
-    <header class="hero" style="height: 40vh; background: var(--primary);">
+
+    <header class="hero"
+        style="height: 40vh; background: linear-gradient(rgba(90, 42, 39, 0.95), rgba(90, 42, 39, 0.95));">
         <div class="hero-content">
             <h1>Divorcios</h1>
+            <p>Asesoramiento legal integral en procesos de divorcio.</p>
         </div>
     </header>
+
     <section class="container">
-        <p>Asesoramiento integral en procesos de divorcio.</p>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Acompañamiento legal profesional</h2>
+                <p>Brindo asesoramiento jurídico integral en procesos de divorcio en la ciudad de Rosario y Provincia
+                    de Santa Fe, acompañando a mis clientes con profesionalismo, ética y una mirada orientada a la
+                    resolución eficiente de conflictos.</p>
+
+                <p>El proceso de divorcio implica no solo la disolución del vínculo matrimonial, sino también el
+                    ordenamiento de cuestiones fundamentales como la distribución de bienes, la responsabilidad
+                    parental, el régimen de comunicación y la cuota alimentaria, cuando existen hijos menores de edad.
+                </p>
+
+                <div class="process-steps" style="margin-top: 30px;">
+                    <div style="margin-bottom: 25px;">
+                        <strong style="color: var(--bordeaux); font-size: 1.1rem; display: block; margin-bottom: 5px;">
+                            Divorcio por presentación conjunta o unilateral
+                        </strong>
+                        <p>Asesoro en la tramitación del divorcio, ya sea que ambos cónyuges estén de acuerdo en
+                            solicitarlo (presentación conjunta) o que la petición sea realizada por uno solo de ellos
+                            (unilateral). El nuevo Código Civil y Comercial permite una gestión ágil y directa del
+                            vínculo matrimonial.</p>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <strong style="color: var(--bordeaux); font-size: 1.1rem; display: block; margin-bottom: 5px;">
+                            Convenio Regulador y Propuesta Reguladora
+                        </strong>
+                        <p>La ley exige que, al solicitar el divorcio, se presente una propuesta sobre cómo se
+                            administrarán las cuestiones derivadas de la ruptura. Mi servicio incluye la redacción y
+                            negociación de:</p>
+                        <ul style="margin: 10px 0 10px 25px; list-style-type: none;">
+                            <li style="margin-bottom: 5px;"><i class="fas fa-check"
+                                     style="color: var(--bordeaux); margin-right: 10px;"></i> Atribución de la vivienda
+                                familiar</li>
+                            <li style="margin-bottom: 5px;"><i class="fas fa-check"
+                                     style="color: var(--bordeaux); margin-right: 10px;"></i> Distribución de bienes y
+                                deudas</li>
+                            <li style="margin-bottom: 5px;"><i class="fas fa-check"
+                                     style="color: var(--bordeaux); margin-right: 10px;"></i> Compensaciones económicas,
+                                si correspondieran</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <strong style="color: var(--bordeaux); font-size: 1.1rem; display: block; margin-bottom: 5px;">
+                            Cuidado Personal y Régimen de Comunicación
+                        </strong>
+                        <p>En casos de hijos menores, trabajamos en el establecimiento de un plan de parentalidad que
+                            resguarde el interés superior del niño, organizando los tiempos, cuidados y la comunicación
+                            con ambos progenitores de manera equilibrada y saludable.</p>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <strong style="color: var(--bordeaux); font-size: 1.1rem; display: block; margin-bottom: 5px;">
+                            Cuota Alimentaria
+                        </strong>
+                        <p>Gestiono el establecimiento, modificación o actualización de la cuota alimentaria, asegurando
+                            que cubra de manera integral las necesidades de manutención, educación, esparcimiento,
+                            vestimenta y salud de los hijos.</p>
+                    </div>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 40px 0;">
+
+                <h3 style="margin-bottom: 20px;">¿Qué incluye mi servicio?</h3>
+                <ul class="feature-list"
+                    style="margin-bottom: 30px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px;">
+                    <li><i class="fas fa-balance-scale" style="color: var(--bordeaux); margin-right: 10px;"></i>
+                        Asesoramiento jurídico integral</li>
+                    <li><i class="fas fa-balance-scale" style="color: var(--bordeaux); margin-right: 10px;"></i>
+                        Redacción de demandas y escritos</li>
+                    <li><i class="fas fa-balance-scale" style="color: var(--bordeaux); margin-right: 10px;"></i>
+                        Negociación de convenios</li>
+                    <li><i class="fas fa-balance-scale" style="color: var(--bordeaux); margin-right: 10px;"></i>
+                        Representación en audiencias</li>
+                    <li><i class="fas fa-balance-scale" style="color: var(--bordeaux); margin-right: 10px;"></i>
+                        División de bienes de la sociedad conyugal</li>
+                    <li><i class="fas fa-balance-scale" style="color: var(--bordeaux); margin-right: 10px;"></i>
+                        Cuidado personal, comunicación y alimentos</li>
+                </ul>
+            </div>
+            <div class="about-img" style="text-align: center; position: sticky; top: 120px;">
+                <i class="fas fa-users-slash" style="font-size: 12rem; color: var(--bordeaux); opacity: 0.1;"></i>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="https://wa.me/5493417418835" class="btn btn-primary" style="margin-right: 10px;">Consultar por
+                WhatsApp</a>
+            <a href="https://calendar.app.google/8zVU6ZTFnbLtJ9tW7" class="btn btn-secondary"
+                style="border-color: var(--bordeaux); color: var(--bordeaux);">Solicitar turno</a>
+        </div>
     </section>
+
     <footer>
         <div class="container">
-            <img src="../assets/logazo.png" alt="Logo" style="max-height: 100px;">
+            <div class="footer-logo">
+                <img src="../assets/logazo.png" alt="Logotipo Dra. Aranza Herrera" class="footer-logo-img">
+            </div>
+            <p>&copy; 2026 Dra. Aranza Herrera — Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

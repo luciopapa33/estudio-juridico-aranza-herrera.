@@ -5,30 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Derecho Previsional | Dra. Aranza Herrera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+
     <nav>
         <div class="logo">
-            <a href="../index.html">
-                <img src="../assets/hipologuito.png" alt="Logo" class="main-logo-img">
+            <a href="../index.html" class="brand-logo">
+                <img src="../assets/hipologuito.png" alt="Logotipo Dra. Aranza Herrera" class="main-logo-img">
             </a>
         </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../index.html#areas">Áreas de Práctica</a></li>
+            <li><a href="../equipo.html">Equipo Legal</a></li>
+            <li><a href="../redes.html">Redes Sociales</a></li>
+            <li><a href="../contacto.html">Contacto</a></li>
+            <li><a href="https://wa.me/5493417418835" class="btn-whatsapp-nav">WhatsApp</a></li>
+            <li><button id="theme-toggle" class="theme-toggle" title="Cambiar modo"><i class="fas fa-moon"></i></button>
+            </li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
-    <header class="hero" style="height: 40vh; background: var(--primary);">
+
+    <header class="hero"
+        style="height: 40vh; background: linear-gradient(rgba(90, 42, 39, 0.95), rgba(90, 42, 39, 0.95));">
         <div class="hero-content">
             <h1>Derecho Previsional</h1>
+            <p>Especialistas en jubilaciones y pensiones.</p>
         </div>
     </header>
+
     <section class="container">
-        <p>Jubilaciones y pensiones.</p>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Aseguramos tu futuro previsional</h2>
+                <p>Contamos con una amplia trayectoria en la gestión de jubilaciones y pensiones. Acompañamos a nuestros
+                    clientes en cada etapa del trámite ante ANSES, garantizando que reciban el beneficio que les
+                    corresponde.</p>
+                <p>Nuestro enfoque se basa en la transparencia y la celeridad, entendiendo la importancia de este paso
+                    para la vida de las personas.</p>
+
+                <h3 style="margin-top: 30px; margin-bottom: 20px;">Nuestros servicios incluyen:</h3>
+                <ul class="feature-list" style="list-style: none;">
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check"
+                            style="color: var(--bordeaux); margin-right: 10px;"></i> Moratorias previsionales vigentes
+                    </li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check"
+                            style="color: var(--bordeaux); margin-right: 10px;"></i> Jubilaciones ordinarias y por edad
+                        avanzada</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check"
+                            style="color: var(--bordeaux); margin-right: 10px;"></i> Pensiones por fallecimiento
+                        (directas y derivadas)</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check"
+                            style="color: var(--bordeaux); margin-right: 10px;"></i> Reconocimiento de servicios y
+                        aportes</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check"
+                            style="color: var(--bordeaux); margin-right: 10px;"></i> Reajustes de haberes y movilidad
+                        jubilatoria</li>
+                    <li style="margin-bottom: 12px;"><i class="fas fa-check"
+                            style="color: var(--bordeaux); margin-right: 10px;"></i> Retiros por invalidez</li>
+                </ul>
+            </div>
+            <div class="about-img" style="text-align: center;">
+                <i class="fas fa-hand-holding-heart"
+                    style="font-size: 15rem; color: var(--bordeaux); opacity: 0.1;"></i>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="https://wa.me/5493417418835" class="btn btn-primary" style="margin-right: 10px;">Consultar por
+                WhatsApp</a>
+            <a href="https://calendar.app.google/8zVU6ZTFnbLtJ9tW7" class="btn btn-secondary"
+                style="border-color: var(--bordeaux); color: var(--bordeaux);">Solicitar turno</a>
+        </div>
     </section>
+
     <footer>
         <div class="container">
-            <img src="../assets/logazo.png" alt="Logo" style="max-height: 100px;">
+            <div class="footer-logo">
+                <img src="../assets/logazo.png" alt="Logotipo Dra. Aranza Herrera" class="footer-logo-img">
+            </div>
+            <p>&copy; 2026 Dra. Aranza Herrera — Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
